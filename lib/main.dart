@@ -364,7 +364,7 @@ class CustomSearchDelegate extends SearchDelegate {
         matchQuery.add(stretch);
       }
     }
-    while (matchQuery.length > 8) {
+    while (matchQuery.length > 5) {
       matchQuery.removeLast();
     }
     return Flexible(
@@ -387,7 +387,7 @@ class CustomSearchDelegate extends SearchDelegate {
       }
     }
     // can only display 8. If the list is larger than 8 it goes off the screen.
-    while (matchQuery.length > 8) {
+    while (matchQuery.length > 5) {
       matchQuery.removeLast();
     }
 
